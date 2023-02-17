@@ -13,8 +13,6 @@ use Pimcore\Model\DataObject\Brand;
 class FilterController extends FrontendController
 {  
    
-
-
     /**
      * @param Request $request
      * @return Response
@@ -79,8 +77,8 @@ class FilterController extends FrontendController
                             
                                           if($Output!=NULL){ 
                                       $result[]=[
-                                          'Category'=>$Category,
-                                          'productName'=> $item->getName(),
+                                          '              Category'=>$Category,
+                                          'productName' => $item->getName(),
                                           'Model' => $item->getModel(),
                                           'ProductId' => $item->getProductId(),
                                           'Color' => $item->getColor(),
@@ -97,15 +95,15 @@ class FilterController extends FrontendController
                     
                     
                 }
-            }
                 return $this->json(['success' => true, 'data' => $result]);
+            }
+            return  $this->json("Not A Category");   
+                
         }
         
-          
-                
-            
-    }
-
+    }            
+    
+}
       
            
         
