@@ -1,0 +1,62 @@
+pimcore_data_hub:
+    configurations:
+        Brand:
+            general:
+                active: true
+                type: dataImporterDataObject
+                name: Brand
+                description: ''
+                group: ''
+                path: null
+                modificationDate: 1676546207
+                createDate: 1676546100
+            loaderConfig:
+                type: asset
+                settings:
+                    assetPath: '/export (2).csv'
+            interpreterConfig:
+                type: csv
+                settings:
+                    skipFirstRow: true
+                    delimiter: ;
+                    enclosure: '"'
+                    escape: \
+            resolverConfig:
+                elementType: dataObject
+                dataObjectClassId: '7'
+                loadingStrategy:
+                    type: notLoad
+                createLocationStrategy:
+                    type: staticPath
+                    settings:
+                        path: /Product/Brand/csv1
+                locationUpdateStrategy:
+                    type: noChange
+                publishingStrategy:
+                    type: noChangeUnpublishNew
+            processingConfig:
+                executionType: sequential
+                doArchiveImportFile: true
+                idDataIndex: ''
+            mappingConfig:
+                -
+                    label: 'new column'
+                    dataSourceIndex:
+                        - '1'
+                    transformationResultType: default
+                    dataTarget:
+                        type: direct
+                        settings:
+                            fieldName: brandName
+                            language: ''
+                            writeIfTargetIsNotEmpty: true
+                            writeIfSourceIsEmpty: true
+                    transformationPipeline: {  }
+            executionConfig:
+                scheduleType: job
+                cronDefinition: ''
+                scheduledAt: '16-02-2023 16:46'
+            permissions:
+                user: {  }
+                role: {  }
+            workspaces: {  }

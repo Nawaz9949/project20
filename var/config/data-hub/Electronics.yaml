@@ -1,0 +1,13 @@
+pimcore_data_hub:
+    configurations:
+        Electronics:
+            general:
+                type: dataImporterDataObject
+                path: null
+                name: Electronics
+                modificationDate: 1676283658
+                createDate: 1676283658
+            workspaces: {  }
+            permissions:
+                user: {  }
+                role: {  }

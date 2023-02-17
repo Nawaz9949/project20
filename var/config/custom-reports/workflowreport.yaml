@@ -1,0 +1,335 @@
+pimcore:
+    custom_report:
+        definitions:
+            workflowreport:
+                name: workflowreport
+                sql: ''
+                dataSourceConfig:
+                    -
+                        sql: '*'
+                        from: "element_workflow_state as W\nJOIN object_5 as E ON W.cid=E.o_id"
+                        where: ''
+                        groupby: ''
+                        type: sql
+                columnConfiguration:
+                    -
+                        name: cid
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel557-1
+                    -
+                        name: ctype
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel557-2
+                    -
+                        name: place
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel557-3
+                    -
+                        name: workflow
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel557-4
+                    -
+                        name: oo_id
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel557-5
+                    -
+                        name: oo_classId
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel557-6
+                    -
+                        name: oo_className
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel557-7
+                    -
+                        name: Brand__id
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel557-8
+                    -
+                        name: Brand__type
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel557-9
+                    -
+                        name: Model
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel557-10
+                    -
+                        name: ProductId
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel557-11
+                    -
+                        name: photo
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel557-12
+                    -
+                        name: GenericPhoto__images
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel557-13
+                    -
+                        name: GenericPhoto__hotspots
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel557-14
+                    -
+                        name: Color
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel557-15
+                    -
+                        name: Manufacturer__id
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel557-16
+                    -
+                        name: Manufacturer__type
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel557-17
+                    -
+                        name: Dealer
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel557-18
+                    -
+                        name: location__longitude
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel557-19
+                    -
+                        name: location__latitude
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel557-20
+                    -
+                        name: orderdetails
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel557-21
+                    -
+                        name: category
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel557-22
+                    -
+                        name: o_id
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel557-23
+                    -
+                        name: o_parentId
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel557-24
+                    -
+                        name: o_type
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel557-25
+                    -
+                        name: o_key
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel557-26
+                    -
+                        name: o_path
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel557-27
+                    -
+                        name: o_index
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel557-28
+                    -
+                        name: o_published
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel557-29
+                    -
+                        name: o_creationDate
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel557-30
+                    -
+                        name: o_modificationDate
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel557-31
+                    -
+                        name: o_userOwner
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel557-32
+                    -
+                        name: o_userModification
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel557-33
+                    -
+                        name: o_classId
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel557-34
+                    -
+                        name: o_className
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel557-35
+                    -
+                        name: o_childrenSortBy
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel557-36
+                    -
+                        name: o_childrenSortOrder
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel557-37
+                    -
+                        name: o_versionCount
+                        display: true
+                        export: true
+                        order: true
+                        width: ''
+                        label: ''
+                        id: extModel557-38
+                niceName: ''
+                group: ''
+                groupIconClass: ''
+                iconClass: ''
+                menuShortcut: true
+                reportClass: ''
+                chartType: pie
+                pieColumn: category
+                pieLabelColumn: oo_id
+                xAxis: null
+                yAxis: {  }
+                modificationDate: 1676538402
+                creationDate: 1676537924
+                shareGlobally: true
+                sharedUserNames:
+                    - admin
+                sharedRoleNames: {  }
